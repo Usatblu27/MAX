@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>max</title>
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="apple-touch-icon" href="./image.png" />
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        font-family: "Times New Roman", Times, serif;
+        position: fixed;
+      }
+      .error {
+        opacity: 0;
+        animation: error 0.05s ease-in-out 4s 1 alternate forwards;
+      }
+      img {
+        opacity: 1;
+        width: 100px;
+        margin-top: 20vh;
+        animation: logo 0.5s ease-in-out 3s 1 alternate forwards;
+      }
+      hr {
+        width: 100vw;
+      }
+      h1 {
+        margin: 15px;
+        font-size: 35px;
+        text-align: center;
+      }
+      p {
+        font-size: 20px;
+        text-align: center;
+      }
+      @keyframes logo {
+        to {
+          opacity: 0;
+        }
+      }
+      @keyframes error {
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="error">
+      <h1>404 Not Found</h1>
+      <hr />
+      <p>nging</p>
+    </div>
+    <img src="image.png" alt="" />
+  </body>
+</html>
