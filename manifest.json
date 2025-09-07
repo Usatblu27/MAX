@@ -5,11 +5,4 @@
   "display": "standalone",
   "orientation": "portrait",
   "prefer_related_applications": false,
-  "icons": [
-    {
-      "src": "image.png",
-      "sizes": "250x250",
-      "type": "image/png"
-    }
-  ]
 }
